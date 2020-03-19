@@ -9,3 +9,27 @@ article {
     background-color: white;
     padding: 1em;
 }
+
+
+
+fetch('https://jsonplaceholder.typicode.com/comments')
+  .then(result => result.json())
+  .then((myJSON) => {
+  	console.log(myJSON);
+  	makeArticle(myJSON);
+  });
+function makeArticle(comments) {
+	makeArticle
+}
+
+
+
+var {postId, name, email, body} = data;
+  	var article = `<article>
+	<h2>${name}</h2>
+	<a href="emilto:${email}">${email}</a>
+	<p>${body}</p>
+	<div>Post ID: ${postId}</div>
+	</article>`
+	console.log(data);
+	$("#comments").appendChild(article)
